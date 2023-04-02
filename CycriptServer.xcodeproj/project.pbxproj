@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA07E04A298EF17D0027915E /* CycriptServerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07E049298EF17D0027915E /* CycriptServerApp.swift */; };
+		FA07E04C298EF17D0027915E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07E04B298EF17D0027915E /* ContentView.swift */; };
+		FA07E04E298EF17D0027915E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA07E04D298EF17D0027915E /* Assets.xcassets */; };
+		FA07E05D298EF2C30027915E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA07E05C298EF2C30027915E /* JavaScriptCore.framework */; };
+		FA07E05F298EF2DC0027915E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA07E05E298EF2D10027915E /* libsqlite3.tbd */; };
+		FA07E061298EF2F00027915E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA07E060298EF2E80027915E /* libc++.tbd */; };
+		FA07E063298EF7F10027915E /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA07E058298EF1A90027915E /* Cycript.framework */; };
+		FA07E068298EFE930027915E /* libcycript.db in Resources */ = {isa = PBXBuildFile; fileRef = FA07E067298EFE930027915E /* libcycript.db */; };
+		FA07E06A298F24390027915E /* AddressMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07E069298F24390027915E /* AddressMonitor.swift */; };
+		FA07E06C298F248C0027915E /* CycriptServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07E06B298F248C0027915E /* CycriptServer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA07E046298EF17D0027915E /* CycriptServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CycriptServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA07E049298EF17D0027915E /* CycriptServerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycriptServerApp.swift; sourceTree = "<group>"; };
+		FA07E04B298EF17D0027915E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA07E04D298EF17D0027915E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA07E058298EF1A90027915E /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cycript.framework; sourceTree = "<group>"; };
+		FA07E05C298EF2C30027915E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FA07E05E298EF2D10027915E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FA07E060298EF2E80027915E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FA07E066298EFC4B0027915E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA07E067298EFE930027915E /* libcycript.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = libcycript.db; sourceTree = "<group>"; };
+		FA07E069298F24390027915E /* AddressMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressMonitor.swift; sourceTree = "<group>"; };
+		FA07E06B298F248C0027915E /* CycriptServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycriptServer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA07E043298EF17D0027915E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA07E05F298EF2DC0027915E /* libsqlite3.tbd in Frameworks */,
+				FA07E05D298EF2C30027915E /* JavaScriptCore.framework in Frameworks */,
+				FA07E061298EF2F00027915E /* libc++.tbd in Frameworks */,
+				FA07E063298EF7F10027915E /* Cycript.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA07E03D298EF17D0027915E = {
+			isa = PBXGroup;
+			children = (
+				FA07E048298EF17D0027915E /* CycriptServer */,
+				FA07E047298EF17D0027915E /* Products */,
+				FA07E057298EF1A90027915E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA07E047298EF17D0027915E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA07E046298EF17D0027915E /* CycriptServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA07E048298EF17D0027915E /* CycriptServer */ = {
+			isa = PBXGroup;
+			children = (
+				FA07E049298EF17D0027915E /* CycriptServerApp.swift */,
+				FA07E04B298EF17D0027915E /* ContentView.swift */,
+				FA07E06B298F248C0027915E /* CycriptServer.swift */,
+				FA07E069298F24390027915E /* AddressMonitor.swift */,
+				FA07E066298EFC4B0027915E /* Info.plist */,
+				FA07E04D298EF17D0027915E /* Assets.xcassets */,
+				FA07E067298EFE930027915E /* libcycript.db */,
+			);
+			path = CycriptServer;
+			sourceTree = "<group>";
+		};
+		FA07E057298EF1A90027915E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA07E060298EF2E80027915E /* libc++.tbd */,
+				FA07E05E298EF2D10027915E /* libsqlite3.tbd */,
+				FA07E05C298EF2C30027915E /* JavaScriptCore.framework */,
+				FA07E058298EF1A90027915E /* Cycript.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA07E045298EF17D0027915E /* CycriptServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA07E054298EF17D0027915E /* Build configuration list for PBXNativeTarget "CycriptServer" */;
+			buildPhases = (
+				FA07E042298EF17D0027915E /* Sources */,
+				FA07E043298EF17D0027915E /* Frameworks */,
+				FA07E044298EF17D0027915E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CycriptServer;
+			productName = CycriptServer;
+			productReference = FA07E046298EF17D0027915E /* CycriptServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA07E03E298EF17D0027915E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FA07E045298EF17D0027915E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = FA07E041298EF17D0027915E /* Build configuration list for PBXProject "CycriptServer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA07E03D298EF17D0027915E;
+			productRefGroup = FA07E047298EF17D0027915E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA07E045298EF17D0027915E /* CycriptServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA07E044298EF17D0027915E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA07E04E298EF17D0027915E /* Assets.xcassets in Resources */,
+				FA07E068298EFE930027915E /* libcycript.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA07E042298EF17D0027915E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA07E06A298F24390027915E /* AddressMonitor.swift in Sources */,
+				FA07E04C298EF17D0027915E /* ContentView.swift in Sources */,
+				FA07E04A298EF17D0027915E /* CycriptServerApp.swift in Sources */,
+				FA07E06C298F248C0027915E /* CycriptServer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA07E052298EF17D0027915E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA07E053298EF17D0027915E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA07E055298EF17D0027915E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P56K8K4MY;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CycriptServer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cycript;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = null.leptos.CycriptServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA07E056298EF17D0027915E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7P56K8K4MY;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CycriptServer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cycript;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = null.leptos.CycriptServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA07E041298EF17D0027915E /* Build configuration list for PBXProject "CycriptServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA07E052298EF17D0027915E /* Debug */,
+				FA07E053298EF17D0027915E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA07E054298EF17D0027915E /* Build configuration list for PBXNativeTarget "CycriptServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA07E055298EF17D0027915E /* Debug */,
+				FA07E056298EF17D0027915E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA07E03E298EF17D0027915E /* Project object */;
+}
