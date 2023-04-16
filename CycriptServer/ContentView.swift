@@ -23,7 +23,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            VStack(spacing: 16) {
+            Spacer()
+            
+            VStack(spacing: 12) {
                 ForEach(ipMonitor.ipv4) { ipAddr in
                     AddressRow(hostOctets: octets(for: ipAddr), port: server.port)
                 }
@@ -34,10 +36,17 @@ struct ContentView: View {
             .onAppear(perform: server.run)
             
             Spacer()
-                .frame(minHeight: 32, maxHeight: 80)
             
-            Toggle("Prevent Idle", isOn: $application.isIdleTimerDisabled)
-                .padding()
+            VStack(spacing: 12) {
+                Toggle("Prevent Idle", isOn: $application.isIdleTimerDisabled)
+                    .padding(.horizontal)
+                    .frame(maxWidth: 448)
+                
+                Text("The application must remain in the foreground to evalute commands")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+            }
         }
         .padding()
     }
@@ -56,7 +65,7 @@ struct AddressRow: View {
                 addressText
             }
             
-            Spacer(minLength: 12)
+            Spacer(minLength: 8)
             
             Button {
                 UIPasteboard.general.string = String(format: "%hhu.%hhu.%hhu.%hhu:%hd",
@@ -65,6 +74,8 @@ struct AddressRow: View {
                 Label("Copy", systemImage: "doc.on.doc")
                     .labelStyle(.iconOnly)
             }
+            .padding(4)
+            .hoverEffect()
         }
     }
     
